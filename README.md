@@ -14,17 +14,19 @@ Use grep to find all instances where the upload was initiated.
 ```
 PROVIDE A SOLUTION HERE
 ```
+ggrep -P "started" transaction_data_daily_event_log_20190129.dat
 
 Once you've reviewed these results, repeat the process but this time using the -c flag to determine how many matching occurences were found.
 ```
 PROVIDE A SOLUTION HERE
 ```
-
+ggrep -P "started" -c transaction_data_daily_event_log_20190129.dat
 
 Use grep to find all instances where the upload was successful. 
 ```
 PROVIDE A SOLUTION HERE
 ```
+ggrep -P "complete" transaction_data_daily_event_log_20190129.dat
 
 Once you've reviewed these results, determine how many matching occurrences were found. This time instead of using the -c flag, pipe the result to the wc program.
 ```
